@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myNav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="se.umu.bide0023.pomodoroapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/navigateToSessionFromHome"
+            app:destination="@id/sessionFragment" />
+        <action
+            android:id="@+id/navigateToRecapFromHome"
+            app:destination="@id/sessionRecap" />
+        <action
+            android:id="@+id/navigateToInputFromHome"
+            app:destination="@id/inputHandler2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionFragment"
+        android:name="se.umu.bide0023.pomodoroapp.SessionFragment"
+        android:label="fragment_session"
+        tools:layout="@layout/fragment_session" >
+        <action
+            android:id="@+id/navigateToRecapFromSession"
+            app:destination="@id/sessionRecap" />
+        <action
+            android:id="@+id/navigateToHomeFromSession"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionRecap"
+        android:name="se.umu.bide0023.pomodoroapp.SessionRecap"
+        android:label="fragment_session_recap"
+        tools:layout="@layout/fragment_session_recap" >
+        <action
+            android:id="@+id/navigateToSessionFromRecap"
+            app:destination="@id/sessionFragment" />
+        <action
+            android:id="@+id/navigateToHomeFromRecap"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputHandler2"
+        android:name="se.umu.bide0023.pomodoroapp.UserSettingFragment"
+        android:label="fragment_input_handler"
+        tools:layout="@layout/fragment_input_handler" >
+        <action
+            android:id="@+id/navigateToRecapFromInput"
+            app:destination="@id/sessionRecap" />
+    </fragment>
+</navigation>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionFragment"
+    android:background="@drawable/session_page">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startBtn"
+        android:layout_width="112dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="472dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="292dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pauseBtn"
+        android:layout_width="117dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="472dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="144dp"
+        android:text="Paus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="373dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        android:padding="10dp"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButtonSession"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="36dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <TextView
+        android:id="@+id/currentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="164dp"
+        android:text="                "
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/pauseBtn"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

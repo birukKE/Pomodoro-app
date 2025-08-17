@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionFragment"
+    android:background="@drawable/session_page">
+
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="117dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="376dp"
+        android:text="Paus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="112dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="376dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="373dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="104dp"
+        android:padding="10dp"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButtonSession"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <TextView
+        android:id="@+id/currentText"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="72dp"
+        android:text="                  "
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

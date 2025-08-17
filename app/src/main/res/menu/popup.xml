@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstItem"
+        android:title="Customize Session"/>
+
+    <item
+        android:id="@+id/secondItem"
+        android:title="Turn off Notification"/>
+
+    <item
+        android:id="@+id/thirdItem"
+        android:title="Debug/Test session"/>
+</menu>
